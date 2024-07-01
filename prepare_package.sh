@@ -18,7 +18,7 @@ FRAMEWORK_NAME=$2
 
 # 2. Calculate checksum and store it
 echo "calculate new checksum"
-NEW_CHECKSUM=$(swift package compute-checksum $FRAMEWORK_NAME.xcframework.zip)
+NEW_CHECKSUM=$(swift package compute-checksum "./CitiwastelibDistribution/$FRAMEWORK_NAME.xcframework.zip")
 echo "print out new shasum for convenience reasons"
 echo "New checksum is $NEW_CHECKSUM"
 
