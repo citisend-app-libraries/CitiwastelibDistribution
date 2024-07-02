@@ -17,8 +17,8 @@ NEW_VERSION=$1
 FRAMEWORK_NAME=$2
 
 # 2. Calculate checksum and store it
-echo "calculate new checksum"
-NEW_CHECKSUM=$(swift package compute-checksum "./CitiwastelibDistribution/$FRAMEWORK_NAME.xcframework.zip")
+echo "calculate new checksum yea 2"
+NEW_CHECKSUM=$(swift package compute-checksum "./$FRAMEWORK_NAME.xcframework.zip")
 echo "print out new shasum for convenience reasons"
 echo "New checksum is $NEW_CHECKSUM"
 
@@ -42,7 +42,7 @@ git push
 
 # 6. Pusblish a new release with the same version of the repository A, and attach XCFramework in the Release metadata
 echo "Releasing the new version"
-gh release create "$NEW_VERSION" --generate-notes "./CitiwastelibDistribution/$FRAMEWORK_NAME.xcframework.zip"
+gh release create "$NEW_VERSION" --generate-notes "./$FRAMEWORK_NAME.xcframework.zip"
 
 # 7. Remove zip of XCFramework
 #echo "delete downloaded zip file"
