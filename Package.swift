@@ -4,7 +4,7 @@ import PackageDescription
 
 let version = "0.0.19"
 let moduleName = "Citiwastelib"
-let checksum = "da7086d8c2a88cec46e5b8904527388c00a63ed7dae0294b83adb3c3808eb803"
+let checksum = "44d7bc2949d0a11041aa7c8d0d25823c87346419fa65e84c6e8f3ac3a844ed00"
 
 let package = Package(
     name: moduleName,

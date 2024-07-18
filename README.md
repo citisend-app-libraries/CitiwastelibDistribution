@@ -38,7 +38,7 @@
 
 Con esta librería conseguimos aportar la herramienta necesaria para la implantación de la apertura de contenedores desarrollados por Citisend.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">volver arriba</a>)</p>
 
 
 <!-- GETTING STARTED -->
@@ -52,7 +52,7 @@ Para la utilización de este proyecto, necesitarás un código de proyecto propo
 
 1. Swift Package Manager
 
-2. Clone the repo
+2. Clonar el repositorio:
    ```
         dependencies: [
             .package(url: "https://github.com/citisend-app-libraries/CitiwastelibDistribution", 
@@ -60,7 +60,7 @@ Para la utilización de este proyecto, necesitarás un código de proyecto propo
         ]
    ```
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">volver arriba</a>)</p>
 
 
 <!-- USAGE EXAMPLES -->
@@ -153,7 +153,7 @@ Utiliza destroy() para eliminar la instancia de conexión cuando lo desees.
 
 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">volver arriba</a>)</p>
 
 
 
@@ -164,7 +164,7 @@ Utiliza destroy() para eliminar la instancia de conexión cuando lo desees.
 
 Enlace al proyecto: [https://github.com/citisend-app-libraries/CitiwastelibDistribution](https://github.com/citisend-app-libraries/CitiwastelibDistribution)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">volver arriba</a>)</p>
 
 
 
