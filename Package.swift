@@ -4,7 +4,7 @@ import PackageDescription
 
 let version = "0.0.1"
 let moduleName = "Citiwastelib"
-let checksum = "953a739f95dcacd5465bf72adddec978b40f6c8169b9f3d032d05a624b66ee94"
+let checksum = "8eda637c68bd086ac6ba6818a53a97e9dfa488faad90d5d5cef644ca50d7cb7c"
 
 let package = Package(
     name: moduleName,
@@ -20,7 +20,7 @@ let package = Package(
     targets: [
            .binaryTarget(
                name: moduleName,
-               url: "https://github.com/albetoetecnia/CitiwastelibDistribution/releases/download/\(version)/\(moduleName).xcframework.zip",
+               url: "https://github.com/citisend-app-libraries/CitiwastelibDistribution/releases/download/\(version)/\(moduleName).xcframework.zip",
                checksum: checksum
            )
        ]
