@@ -71,11 +71,11 @@ Describa cómo utiliza los servicios de localización y bluetooth la app, es obl
 
 | Usage key                                                 | Required when:                                                                   |
 |-----------------------------------------------------------|----------------------------------------------------------------------------------|
-| `NSLocationWhenInUseUsageDescription`              | The app requests When in Use or Always authorization.                            |
-| `NSLocationAlwaysAndWhenInUseUsageDescription` | The app requests Always authorization.                                           |
-| `NSLocationTemporaryUsageDescriptionDictionary`             | Used when you want to temporary extend the precision of your authorization level |
-| `Privacy - Bluetooth Always Usage Description`             | Used when you want to temporary extend the precision of your authorization level |
-|                                                           |                                                                                  |
+| `NSLocationWhenInUseUsageDescription`              | La aplicación utiliza la ubicación para la correcta apertura de contenedores Citisend.     |
+| `NSLocationAlwaysAndWhenInUseUsageDescription` | La aplicación utiliza la ubicación para la correcta apertura de contenedores Citisend.   |
+| `NSLocationTemporaryUsageDescriptionDictionary`             | La aplicación utiliza la ubicación para la correcta apertura de contenedores Citisend. |
+| `Privacy - Bluetooth Always Usage Description`             | Utilizamos el bluetooth para la correcta apertura de contenedores Citisend. |
+|                                                           |                                                                         |
 
 Importa la librería Citiwastelib:
 
@@ -147,9 +147,9 @@ Puedes iniciar el método discover para comenzar el proceso de apertura de conte
    
 Utiliza destroy() para eliminar la instancia de conexión cuando lo desees.
    
-    ```
+```
         CitiConnect.shared.destroy()
-    ```  
+```  
 
 
 
