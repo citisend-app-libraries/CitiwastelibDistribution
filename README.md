@@ -56,7 +56,7 @@ Para la utilización de este proyecto, necesitarás un código de proyecto propo
    ```
         dependencies: [
             .package(url: "https://github.com/citisend-app-libraries/CitiwastelibDistribution", 
-                .upToNextMajor(from: SHOW_LAST_VERSION))
+                .upToNextMajor(from: SHOW_LAST_RELEASE_VERSION))
         ]
    ```
 
@@ -147,9 +147,9 @@ Puedes iniciar el método discover para comenzar el proceso de apertura de conte
    
 Utiliza destroy() para eliminar la instancia de conexión cuando lo desees.
    
-```
+  ```
     CitiConnect.shared.destroy()
-```  
+  ```  
 
 
 
