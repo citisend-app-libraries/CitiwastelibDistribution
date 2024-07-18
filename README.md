@@ -4,7 +4,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/citisend-app-libraries/CitiwastelibDistribution">
-    <img src="images/logo.png" alt="Logo" width="800" height="229">
+    <img src="images/logo.png" alt="Logo" width="700" height="229">
   </a>
 
   <h3 align="center">Citiwaste Librería para iOS</h3>
@@ -46,7 +46,7 @@ Con esta librería conseguimos aportar la herramienta necesaria para la implanta
 
 ### Requisitos previos
 
-Para la utilización de este proyecto, necesitarás un código de proyecto proporcionado por Citisendm, además necesitaremos Xcode 15 o superior.
+Para la utilización de este proyecto, necesitarás un código de proyecto proporcionado por [Citisend.io](https://www.citisend.io), además necesitaremos Xcode 15 o superior.
 
 ### Instalación
 
