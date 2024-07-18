@@ -55,7 +55,8 @@ Para la utilización de este proyecto, necesitarás un código de proyecto propo
 2. Clone the repo
    ```
         dependencies: [
-            .package(url: "https://github.com/citisend-app-libraries/CitiwastelibDistribution", .upToNextMajor(from: "0.0.20"))
+            .package(url: "https://github.com/citisend-app-libraries/CitiwastelibDistribution", 
+                .upToNextMajor(from: "0.0.20"))
         ]
    ```
 
@@ -76,21 +77,19 @@ Describa cómo utiliza los servicios de localización y bluetooth la app, es obl
 | `Privacy - Bluetooth Always Usage Description`             | Used when you want to temporary extend the precision of your authorization level |
 |                                                           |                                                                                  |
 
-Importa la librería Citiwastelib
+Importa la librería Citiwastelib:
 
    ```
     import Citiwastelib
-   
    ```
    
-Declara el uso del protocolo CitiConnectProtocol
+Declara el uso del protocolo CitiConnectProtocol:
 
    ```
    class ViewController: UIViewController, CLLocationManagerDelegate, CitiConnectProtocol {
-   
    ```
    
-Implementa los métodos necesarios para la receción de eventos
+Implementa los métodos necesarios para la recepción de eventos:
 
    ```
     func onTransmision(id: UUID, major: CLBeaconMajorValue, minor: CLBeaconMinorValue) {
@@ -123,10 +122,7 @@ Implementa los métodos necesarios para la receción de eventos
             case CitiConnect.shared.TIME_OUT:
              // TIME OUT
         default: break
-            
     }
-    
-   
    ```
    
 Solicitar el uso de la localización e inicializa la librería
@@ -140,21 +136,19 @@ Solicitar el uso de la localización e inicializa la librería
         
         CitiConnect.shared.delegate = self
         CitiConnect.shared.setUpTimers(timer_lock: 5.0)
-   
     }
-   
    ```   
    
 Puedes iniciar el método discover para comenzar el proceso de apertura de contenedor, para iniciar este método necesitas el id de proyecto y el usuario de la app.
+  
    ```
-    CitiConnect.shared.discover(project_id: project, user_id: user)
-    
+     CitiConnect.shared.discover(project_id: project, user_id: user)
    ```   
    
 Utiliza destroy() para eliminar la instancia de conexión cuando lo desees.
+   
     ```
         CitiConnect.shared.destroy()
-
     ```  
 
 
@@ -164,9 +158,9 @@ Utiliza destroy() para eliminar la instancia de conexión cuando lo desees.
 
 
 <!-- CONTACT -->
-## Contact
+## Contacto
 
-Citisend.io - info@citisend.io
+[Citisend.io](https://www.citisend.io) - info@citisend.io
 
 Enlace al proyecto: [https://github.com/citisend-app-libraries/CitiwastelibDistribution](https://github.com/citisend-app-libraries/CitiwastelibDistribution)
 
