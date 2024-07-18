@@ -2,9 +2,9 @@
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 import PackageDescription
 
-let version = "0.0.16"
+let version = "0.0.17"
 let moduleName = "Citiwastelib"
-let checksum = "a1043ade2b1f16048e727fcdf58b2b8b1e0448fdd1ba03a3c822acc4f4878296"
+let checksum = "35a24bc9c3ba3bf5ac57f66e08e01cb27219783179e7883fed001e8012222307"
 
 let package = Package(
     name: moduleName,
