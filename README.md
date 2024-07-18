@@ -4,7 +4,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/citisend-app-libraries/CitiwastelibDistribution">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="images/logo.png" alt="Logo" width="800" height="229">
   </a>
 
   <h3 align="center">Citiwaste Librería para iOS</h3>
@@ -53,9 +53,10 @@ Para la utilización de este proyecto, necesitarás un código de proyecto propo
 1. Swift Package Manager
 
 2. Clone the repo
-   ```dependencies: [
-    .package(url: "https://github.com/citisend-app-libraries/CitiwastelibDistribution", .upToNextMajor(from: "0.0.20"))
-]
+   ```
+        dependencies: [
+            .package(url: "https://github.com/citisend-app-libraries/CitiwastelibDistribution", .upToNextMajor(from: "0.0.20"))
+        ]
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
