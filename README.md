@@ -4,7 +4,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/citisend-app-libraries/CitiwastelibDistribution">
-    <img src="images/logo.png" alt="Logo" width="700" height="229">
+    <img src="images/logo.png" alt="Logo" width="670" height="229">
   </a>
 
   <h3 align="center">Citiwaste Librería para iOS</h3>
