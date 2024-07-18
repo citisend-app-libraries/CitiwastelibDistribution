@@ -56,7 +56,7 @@ Para la utilización de este proyecto, necesitarás un código de proyecto propo
    ```
         dependencies: [
             .package(url: "https://github.com/citisend-app-libraries/CitiwastelibDistribution", 
-                .upToNextMajor(from: "0.0.20"))
+                .upToNextMajor(from: SHOW_LAST_VERSION))
         ]
    ```
 
