@@ -148,7 +148,7 @@ Puedes iniciar el método discover para comenzar el proceso de apertura de conte
 Utiliza destroy() para eliminar la instancia de conexión cuando lo desees.
    
 ```
-        CitiConnect.shared.destroy()
+    CitiConnect.shared.destroy()
 ```  
 
 
