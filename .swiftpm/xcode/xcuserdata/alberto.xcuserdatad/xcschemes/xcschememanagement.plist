@@ -4,26 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-<<<<<<< HEAD
 		<key>Citiwastelib.xcscheme_^#shared#^_</key>
-=======
-		<key>Citiwastelibs.xcscheme_^#shared#^_</key>
->>>>>>> e8709ce5ccd618455479a96d1f8fb5c8b1eed09a
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
 	</dict>
-<<<<<<< HEAD
-=======
-	<key>SuppressBuildableAutocreation</key>
-	<dict>
-		<key>Citiwastelibs</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-	</dict>
->>>>>>> e8709ce5ccd618455479a96d1f8fb5c8b1eed09a
 </dict>
 </plist>
