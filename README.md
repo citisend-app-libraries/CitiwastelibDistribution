@@ -63,7 +63,7 @@ Para la utilización de este proyecto, necesitarás un código de proyecto propo
 <br />
 <div align="center">
   <a href="https://github.com/citisend-app-libraries/CitiwastelibDistribution">
-    <img src="images/screen.png" alt="Logo" width="670" height="229">
+    <img src="images/screen.png" alt="SPM">
   </a>
 </div>
 
