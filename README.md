@@ -60,6 +60,14 @@ Para la utilización de este proyecto, necesitarás un código de proyecto propo
         ]
    ```
 
+<br />
+<div align="center">
+  <a href="https://github.com/citisend-app-libraries/CitiwastelibDistribution">
+    <img src="images/screen.png" alt="Logo" width="670" height="229">
+  </a>
+</div>
+
+
 <p align="right">(<a href="#readme-top">volver arriba</a>)</p>
 
 
