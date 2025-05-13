@@ -7,7 +7,7 @@
     <img src="images/logo.png" alt="Logo" width="670" height="229">
   </a>
 
-  <h3 align="center">Citiwaste Librería para iOS</h3>
+  <h3 align="center">Citiwaste Librería para iOS y Android</h3>
 
 </div>
 
@@ -48,7 +48,7 @@ Con esta librería conseguimos aportar la herramienta necesaria para la implanta
 
 Para la utilización de este proyecto, necesitarás un código de proyecto proporcionado por [Citisend.io](https://www.citisend.io), además necesitaremos Xcode 15 o superior.
 
-### Instalación
+### Instalación iOS
 
 1. Swift Package Manager
 
@@ -72,7 +72,7 @@ Para la utilización de este proyecto, necesitarás un código de proyecto propo
 
 
 <!-- USAGE EXAMPLES -->
-## Utilización
+## Utilización iOS
 
 Describa cómo utiliza los servicios de localización y bluetooth la app, es obligatorio para poder utilizar la librería otorgar estos permisos a la aplicación
 
@@ -159,6 +159,105 @@ Utiliza destroy() para eliminar la instancia de conexión cuando lo desees.
     CitiConnect.shared.destroy()
   ```  
 
+
+
+<p align="right">(<a href="#readme-top">volver arriba</a>)</p>
+
+
+### Instalación Android
+
+1. Jitpack
+
+2. Configura maven con el token de acceso proporcionado, para obtener el repositorio correctamente settings.gradle.kts:
+   ```
+     dependencyResolutionManagement {
+         repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+          repositories {
+            google()
+            mavenCentral()
+            maven {
+            url = uri("https://www.jitpack.io")
+            credentials.username = "AUTH_TOKEN"
+          }
+      }
+   ```
+
+3. Configura maven con el token de acceso, para obtener el repositorio correctament en build.gradle.kts (:app):
+   ```
+    implementation("com.github.citisend-app-libraries:CitiwastelibAndroid:LAST_RELEASE")
+   ```
+
+<p align="right">(<a href="#readme-top">volver arriba</a>)</p>
+
+
+<!-- USAGE EXAMPLES -->
+## Utilización Android
+
+Declara la variable privada e inicializala con el código de proyecto, usuario y opcionalmente el time_out:
+
+   ```
+    private lateinit var citiConnect: CitiConnect
+    citiConnect = CitiConnect(activity, project, user, time_out);
+   ```
+
+Utiliza el método discover para iniciar el proceso de apertra:
+
+   ```
+    citiConnect.discover({ name, state ->
+            if (state == State.EV2_SUCCEED_EVENT) {
+            
+            }
+            if (state == State.EV2_ERROR_ID_REJECTED_POLITICS_DEVICE_MODE) {
+              
+            }
+            if (state == State.EV2_ERROR_ID_REJECTED_WRONG_PROJECT) {
+                
+            }
+       }, { error ->
+           if (error == TIME_OUT) {
+              // Tiempo excedido en la Identificación"
+           }
+       })
+   ```
+
+Recuerda solicitar los permisos necesarios (ejemplo utilizando [Dexter](https://github.com/Karumi/Dexter)):
+
+   ```
+    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+         Dexter.withContext(this)
+             .withPermissions(
+                 Manifest.permission.ACCESS_FINE_LOCATION,
+                 Manifest.permission.ACCESS_COARSE_LOCATION,
+                 Manifest.permission.BLUETOOTH_SCAN,
+                 Manifest.permission.BLUETOOTH_CONNECT,
+                 Manifest.permission.BLUETOOTH_ADVERTISE,
+             ).withListener(object : MultiplePermissionsListener {
+                 override fun onPermissionsChecked(report: MultiplePermissionsReport) { /* ... */
+                 }
+
+                 override fun onPermissionRationaleShouldBeShown(
+                     permissions: List<PermissionRequest?>?,
+                     token: PermissionToken?
+                 ) { /* ... */
+                 }
+             }).check()
+     } else {
+         Dexter.withContext(this)
+             .withPermissions(
+                 Manifest.permission.ACCESS_FINE_LOCATION,
+                 Manifest.permission.ACCESS_COARSE_LOCATION,
+             ).withListener(object : MultiplePermissionsListener {
+                 override fun onPermissionsChecked(report: MultiplePermissionsReport) { /* ... */
+                 }
+
+                 override fun onPermissionRationaleShouldBeShown(
+                     permissions: List<PermissionRequest?>?,
+                     token: PermissionToken?
+                 ) { /* ... */
+                 }
+             }).check()
+     }
+   ```
 
 
 <p align="right">(<a href="#readme-top">volver arriba</a>)</p>
