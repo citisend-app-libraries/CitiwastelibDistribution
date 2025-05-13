@@ -23,10 +23,16 @@
       <a href="#getting-started">Primeros pasos</a>
       <ul>
         <li><a href="#prerequisites">Requisitos previos</a></li>
-        <li><a href="#installation">Instalación</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Utilización</a></li>
+    <li><a href="#installation">Instalación iOS</a></li>
+    <ul>
+      <li><a href="#usage">Utilización</a></li>
+    </ul>
+    <li><a href="#installation">Instalación Android</a></li>
+    <ul>
+      <li><a href="#usage">Utilización</a></li>
+    </ul>
     <li><a href="#contact">Contact</a></li>
   </ol>
 </details>
@@ -48,7 +54,7 @@ Con esta librería conseguimos aportar la herramienta necesaria para la implanta
 
 Para la utilización de este proyecto, necesitarás un código de proyecto proporcionado por [Citisend.io](https://www.citisend.io), además necesitaremos Xcode 15 o superior.
 
-### Instalación iOS
+## Instalación iOS
 
 1. Swift Package Manager
 
@@ -72,7 +78,7 @@ Para la utilización de este proyecto, necesitarás un código de proyecto propo
 
 
 <!-- USAGE EXAMPLES -->
-## Utilización iOS
+### Utilización
 
 Describa cómo utiliza los servicios de localización y bluetooth la app, es obligatorio para poder utilizar la librería otorgar estos permisos a la aplicación
 
@@ -164,7 +170,7 @@ Utiliza destroy() para eliminar la instancia de conexión cuando lo desees.
 <p align="right">(<a href="#readme-top">volver arriba</a>)</p>
 
 
-### Instalación Android
+## Instalación Android
 
 1. Jitpack
 
@@ -191,7 +197,7 @@ Utiliza destroy() para eliminar la instancia de conexión cuando lo desees.
 
 
 <!-- USAGE EXAMPLES -->
-## Utilización Android
+### Utilización
 
 Declara la variable privada e inicializala con el código de proyecto, usuario y opcionalmente el time_out:
 
