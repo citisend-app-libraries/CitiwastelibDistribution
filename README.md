@@ -156,7 +156,7 @@ Solicitar el uso de la localización e inicializa la librería
 Puedes iniciar el método discover para comenzar el proceso de apertura de contenedor, para iniciar este método necesitas el id de proyecto y el usuario de la app.
   
    ```
-     CitiConnect.shared.discover(project_id: project, user_id: user)
+     CitiConnect.shared.discover(project_id: project, user_id: user, d1: 1, d2: 2, d3: 3, d4: 4)
    ```   
    
 Utiliza destroy() para eliminar la instancia de conexión cuando lo desees.
@@ -203,7 +203,7 @@ Declara la variable privada e inicializala con el código de proyecto, usuario y
 
    ```
     private lateinit var citiConnect: CitiConnect
-    citiConnect = CitiConnect(activity, project, user, time_out);
+    citiConnect = CitiConnect(activity, project, user, time_out, d1, d2, d3, d4);
    ```
 
 Utiliza el método discover para iniciar el proceso de apertra:
